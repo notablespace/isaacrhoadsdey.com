@@ -1,0 +1,75 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "bootstrap/bootstrap";
+
+body {
+	padding-top: 3rem;
+	font-size: 1rem;
+	color: #5a5a5a;
+}
+
+#myCarousel {
+	margin-bottom: 4rem;
+}
+
+
+#myCarousel .carousel-item { 
+	height: 800px;
+	overflow: hidden;
+}
+
+#myCarousel .carousel-item img { 
+	/* max-height: 100%; */
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+h2, .h2 {
+	font-size: 3rem;
+}
+
+
+.featurette-heading {
+	margin-top: 7rem;
+	margin-bottom: .5rem;
+	font-family: inherit;
+	color: inherit;
+}
+
+.featurette-divider {
+	margin: 5rem 0;
+}
+
+.bg-dark {
+	background: $bgcolor !important;
+}
+
+footer {
+	margin-top: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 3em;
+	color: $color4;
+}
+
+footer a {
+	color: inherit;
+	
+}
+
+footer a:hover {
+	color: $color5;
+	text-decoration: underline;
+}
+
+.zsg-logo-svg {
+	color: $color4;
+	height: 1rem;
+}
