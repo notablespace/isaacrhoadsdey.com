@@ -15,13 +15,22 @@
 # in the templates via {{ site.myvariable }}.
 title: Isaac Rhoads-Dey Realtor
 email: isaac@isaacrhoadsdey.com
+phone: 541-513-3084
+
 description: >- # this means to ignore newlines until "baseurl:"
   Realtor serving Eugene / Springfield and the surrounding area, helping
   buyers and sellers accomplish their real estate goals since 2008.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://isaacrhoadsdey.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+#Social Links
+#twitter_username: jekyllrb
+#github_username:  jekyll
+facebook_username: IsaacRhoadsDeyRealtor
+#youtube_username: 
+linkedin_username: isaac-rhoads-14bb302
+zillow_username: user8229655
+instagram_username: therealhousesoflanecounty
 
 # Build settings
 markdown: kramdown
