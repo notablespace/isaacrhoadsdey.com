@@ -20,8 +20,10 @@ phone: 541-513-3084
 description: >- # this means to ignore newlines until "baseurl:"
   Realtor serving Eugene / Springfield and the surrounding area, helping
   buyers and sellers accomplish their real estate goals since 2008.
-baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "/isaacrhoadsdey" # the subpath of your site, e.g. /blog
 url: "https://isaacrhoadsdey.com" # the base hostname & protocol for your site, e.g. http://example.com
+host: 0.0.0.0
+port: 4000
 
 #Social Links
 #twitter_username: jekyllrb

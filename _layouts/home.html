@@ -1,13 +1,18 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+  {%- include head.html -%}
 
-{%- include carousel.html -%}
+  <body>
+
+    {%- include header.html -%}
+
+{%- include splash.html -%}
+
 
 
 <div class="container featurettes">
-  <div class="row featurette">
+  <div class="row featurette" id="isaac">
     <div class="col-md-7">
       <h2 class="featurette-heading">Isaac Rhoads-Dey, <span class="muted-text">Realtor</span></h2>
       <p class="lead">
@@ -22,11 +27,14 @@ layout: default
       <img class="featurette-image img-fluid mx-auto" src="/img/isaac_2016_head_shot.jpg">
     </div>
   </div><!-- /.row.featurette -->
-  <hr class="featurette-divider"/>
 
 
 
-  <div class="row featurette">
+
+
+  <hr class="featurette-divider" />
+
+  <div class="row featurette" id="sellers">
     <div class="col-md-5">
       <img class="featurette-image img-fluid mx-auto" src="/img/open_house.jpg">
     </div>
@@ -38,11 +46,13 @@ layout: default
       </p>
     </div>
   </div><!-- /.row.featurette -->
+
+
+
+
   <hr class="featurette-divider"/>
 
-
-
-  <div class="row featurette">
+  <div class="row featurette" id="buyers">
     <div class="col-md-7">
       <h2 class="featurette-heading">Buyers</h2>
       <p class="lead">
@@ -53,9 +63,10 @@ layout: default
       <img class="featurette-image img-fluid mx-auto" src="/img/rawpixel-761473-unsplash.jpg">
     </div>
   </div><!-- /.row.featurette -->
-  <hr class="featurette-divider"/>
 
 
+
+  <hr class="featurette-divider"  id="preapproved"/>
 
   <div class="row featurette">
     <div class="col-md-5">
@@ -71,13 +82,11 @@ layout: default
       <a class="btn btn-primary btn-lg" href="https://www.peakmtg.com/brian-rhoads-dey/">Get Pre-Approved Now</a>
     </div>
   </div><!-- /.row.featurette -->
+
+
   <hr class="featurette-divider"/>
 
-</div><!-- /.featurette -->
-
-
-<div class="container eugene">
-  <div class="row">
+  <div class="row" id="eugene">
     <div class="col-md-12">
       <h2>Moving to Eugene/Springfield</h2>
 
@@ -96,3 +105,13 @@ layout: default
   </div>
 </div><!-- /.container-eugene -->
 
+<div id="contact"></div>
+
+{%- include footer.html -%}
+
+<script type="text/javascript">
+  $('body').scrollspy({ target: '#topnav', offset: 100 });
+</script>
+
+</body>
+</html>
